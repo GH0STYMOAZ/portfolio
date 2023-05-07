@@ -1,5 +1,5 @@
 import './globals.css'
-
+import Head from 'next/head'
 
 export const metadata = {
   title: 'Create Next App',
@@ -9,6 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head/>
       <body>{children}</body>
     </html>
   )
