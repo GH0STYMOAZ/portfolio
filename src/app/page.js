@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import styles from "./Page.module.css";
 import { useEffect, useRef } from "react";
 import Navigation from "./components/Navigation";
+import { CustomCursor } from "./components/customCursor";
 
 const Home = () => {
   const imgRef = useRef(null);
@@ -13,52 +13,13 @@ const Home = () => {
     imgRef.current.style.opacity = 1;
   }, []);
 
-  useEffect(() => {
-    const cursor = document.querySelector(".cursor");
-
-    document.addEventListener("mousemove", (e) => {
-      if (cursor.classList.contains("hover")) {
-        cursor.setAttribute(
-          "style",
-          `top: ${e.pageY - 57}px; left: ${e.pageX - 57}px;`
-        );
-      } else {
-        cursor.setAttribute(
-          "style",
-          `top: ${e.pageY - 27}px; left: ${e.pageX - 27}px;`
-        );
-      }
-    });
-
-    // ======== CURSOR EXPAND EFFECT ON CLICK ======== //
-    document.addEventListener("click", () => {
-      cursor.classList.add("expand");
-
-      setTimeout(() => {
-        cursor.classList.remove("expand");
-      }, 500);
-    });
-
-    // ======== CURSOR HOVER EFFECT ON LINK ======== //
-    const cursorHoverLinks = document.querySelectorAll(".cursor-hover-link");
-    cursorHoverLinks.forEach((link) => {
-      link.addEventListener("mouseover", (e) => {
-        cursor.classList.add("hover");
-      });
-      link.addEventListener("mouseout", () => {
-        cursor.classList.remove("hover");
-      });
-    });
-  }, []);
-
   return (
     <>
       <main>
         <div className={styles.home_container}>
           <div className={styles.home_col_one}>
             <Navigation />
-            <div className="cursor"></div>
-
+            <CustomCursor/>
             {/* ===== COPYRIGHT ===== */}
             <div className={styles.home_copyright}>
               <p>&copy; HISHAM HUSSAIN</p>
