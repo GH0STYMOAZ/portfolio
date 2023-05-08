@@ -8,6 +8,17 @@ body {
   position: relative;
 }
 
+/* ======= FADE ======= */
+.background_fade {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(40, 39, 39);
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
 /* ======= CUSTOM CURSOR ======= */
 .cursor {
   width: 60px;

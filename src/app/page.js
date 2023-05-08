@@ -5,6 +5,7 @@ import styles from "./Page.module.css";
 import { useEffect, useRef } from "react";
 import Navigation from "./components/Navigation";
 import { CustomCursor } from "./components/customCursor";
+import BackgroundFade from "./components/backgroundFade";
 
 const Home = () => {
   const imgRef = useRef(null);
@@ -28,7 +29,7 @@ const Home = () => {
 
           {/* ===== BACKGROUND & HOME INFO===== */}
           <div className={styles.home_col_two}>
-            <div className={styles.home_bg_fade}></div>
+            <BackgroundFade/>
             <div ref={imgRef} className={styles.home_bg_img}>
               <Image
                 src="/imgs/bgimg1.png"

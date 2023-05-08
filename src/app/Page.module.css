@@ -18,16 +18,6 @@
 .home_col_three {
 }
 /* ======== BACKGROUND ======== */
-.home_bg_fade {
-  width: 100vw;
-  height: 100vh;
-  background: rgb(40, 39, 39);
-  opacity: 0.5;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-}
 .home_bg_img {
   position: absolute;
   bottom: 0;
