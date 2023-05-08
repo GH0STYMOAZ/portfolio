@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import styles from "./Page.module.css";
 import { useEffect, useRef } from "react";
+import Navigation from "./components/Navigation";
 
 const Home = () => {
   const imgRef = useRef(null);
@@ -55,12 +56,7 @@ const Home = () => {
       <main>
         <div className={styles.home_container}>
           <div className={styles.home_col_one}>
-            {/* ===== LOGO ===== */}
-            <div className={styles.home_logo}>
-              <Link className="cursor-hover-link" href={"/"}>
-                <Image src="/imgs/logo.png" alt="logo" width={60} height={60} />
-              </Link>
-            </div>
+            <Navigation />
             <div className="cursor"></div>
 
             {/* ===== COPYRIGHT ===== */}
@@ -99,39 +95,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className={styles.home_col_three}>
-            {/* ===== NAVIGATION ===== */}
-            <div className={styles.home_navigation}>
-              <div
-                className={`${styles.home_nav_links} ${styles.link_profile}`}
-              >
-                <Link
-                  className={`${styles.home_nav_link} cursor-hover-link`}
-                  href={"/profile"}
-                >
-                  PROFILE
-                </Link>
-              </div>
-              <div className={`${styles.home_nav_links} ${styles.link_wroks}`}>
-                <Link
-                  className={`${styles.home_nav_link} cursor-hover-link`}
-                  href={"/works"}
-                >
-                  WORKS
-                </Link>
-              </div>
-              <div
-                className={`${styles.home_nav_links} ${styles.link_contactme}`}
-              >
-                <Link
-                  className={`${styles.home_nav_link} cursor-hover-link`}
-                  href={"/contactme"}
-                >
-                  CONTACT ME
-                </Link>
-              </div>
-            </div>
-          </div>
+          <div className={styles.home_col_three}></div>
         </div>
       </main>
     </>
