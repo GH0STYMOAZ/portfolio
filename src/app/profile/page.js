@@ -7,6 +7,7 @@ import BackgroundFade from "../components/backgroundFade";
 import AboutMe from "../components/children/profile/aboutMe";
 import EnterProfile from "../components/children/profile/enterProfile";
 import Skills from "../components/children/profile/skills";
+import Services from "../components/children/profile/services";
 
 const Profile = () => {
   return (
@@ -32,6 +33,13 @@ const Profile = () => {
           <div className="skillsContainer">
            <Skills/>
           </div>
+
+           {/* ===== SERVICES ===== */}
+          <div className="skillsContainer">
+           <Services/>
+          </div>
+
+
         </div>
       </div>
     </>

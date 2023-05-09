@@ -27,7 +27,7 @@
 
 .skills_grid {
   width: 55vw;
-  height: 42vh;
+  height: 44vh;
   /* background: green; */
   display: grid;
   column-gap: 6.5rem;

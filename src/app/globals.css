@@ -75,9 +75,8 @@ body {
   cursor: pointer;
 }
 
-
 /* ======= ABOUT MODULE ======= */
-.ending_line_one{
+.ending_line_one {
   width: 100%;
   background: gray;
   height: 1px;
@@ -89,7 +88,7 @@ body {
 }
 
 /* ======= ABOUT MODULE ======= */
-.ending_line_two{
+.ending_line_two {
   width: 100%;
   background: gray;
   height: 1px;
@@ -97,11 +96,11 @@ body {
   z-index: 5;
   grid-area: 4/1/4/4;
   position: relative;
-  top: .7rem;
+  top: 0.7rem;
 }
 
-/* ======= SKILL MODULE ======= */
-.ending_line_three{
+/* ======= SKILL,SEVICE MODULE ======= */
+.ending_line_three {
   width: 100%;
   background: gray;
   height: 1px;
@@ -110,9 +109,8 @@ body {
   grid-area: 3/1/3/4;
 }
 
-
 /* ======= SKILL MODULE ======= */
-.skills__header{
+.skills__header {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -120,34 +118,169 @@ body {
   font-family: "Playfair Display", serif;
 }
 
-.skills_open .skills__arrow{
+.skills_open .skills__arrow {
   transform: rotate(-180deg);
 }
-.skills__arrow{
+.skills__arrow {
   font-size: 2rem;
   color: white;
 }
-.skills__arrow{
+.skills__arrow {
   margin-left: auto;
-  transition: .4s;
+  transition: 0.4s;
 }
-.skills_open .skills__list{
+.skills_open .skills__list {
   height: max-content;
   margin-bottom: 2.5rem;
 }
-.skills__close .skills__list{
+.skills__close .skills__list {
   height: 0;
   overflow: hidden;
 }
 
-.skills__list{
+.skills__list {
   margin-top: 1.5rem;
   padding-left: 2.7rem;
   /* transition: 0.3s ease-out; */
   font-family: "Poppins", sans-serif;
 }
 
+/*==================== SERVICES MODULE ====================*/
+.services_section {
+  position: relative;
+  z-index: 4;
+  height: 55vh;
+  /* background: red; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.services_grid {
+  width: 55vw;
+  height: 44vh;
+  /* background: green; */
+  display: grid;
+  column-gap: 6.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.services_main__title {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+.services__subtitle {
+  font-size: 1.2rem;
+}
+.services__content {
+  margin-top: 4rem;
+  position: relative;
+  background-color: white;
+  color: black;
+  padding: 5rem 0.5rem 1.25rem 1.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
 
+.services__content:hover {
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.854);
+}
+
+.services__icon {
+  display: block;
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.services__title {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+.services__button {
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.button__icon {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+.button__icon:hover {
+  color: gray;
+}
+.services__button:hover .button__icon {
+  transform: translateX(0.25rem);
+}
+
+.services__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.services__modal-content {
+  width: 30rem;
+  height: 20rem;
+  position: relative;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.services__modal-services {
+  display: grid;
+  row-gap: 1.3rem;
+}
+
+.services__modal-service {
+  display: flex;
+}
+
+.services__modal-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.services__modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.7rem;
+  color: black;
+  cursor: pointer;
+}
+.services__modal-service {
+  font-size: 1.3rem;
+}
+.services__modal-icon {
+  color: black;
+  margin-right: 0.25rem;
+}
+/* ====== Active Modal =====*/
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
 /* .enter_profile_container{
   position: relative;
   top: 4rem;
