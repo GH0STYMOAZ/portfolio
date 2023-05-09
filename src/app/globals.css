@@ -1,3 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@200&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@500;600&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap);
+/* font-family: "Bebas Neue", cursive; */
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Oswald', sans-serif; */
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+/* font-family: "Playfair Display", serif; */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -11,7 +25,7 @@ body {
 /* ======= FADE ======= */
 .background_fade {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background: rgb(40, 39, 39);
   opacity: 0.5;
   position: absolute;
@@ -60,3 +74,98 @@ body {
   font-weight: bolder;
   cursor: pointer;
 }
+
+
+/* ======= ABOUT MODULE ======= */
+.ending_line_one{
+  width: 100%;
+  background: gray;
+  height: 1px;
+  position: relative;
+  z-index: 5;
+  position: relative;
+  bottom: 9.5rem;
+  grid-area: 1/1/2/4;
+}
+
+/* ======= ABOUT MODULE ======= */
+.ending_line_two{
+  width: 100%;
+  background: gray;
+  height: 1px;
+  position: relative;
+  z-index: 5;
+  grid-area: 4/1/4/4;
+  position: relative;
+  top: .7rem;
+}
+
+/* ======= SKILL MODULE ======= */
+.ending_line_three{
+  width: 100%;
+  background: gray;
+  height: 1px;
+  position: relative;
+  z-index: 5;
+  grid-area: 3/1/3/4;
+}
+
+
+/* ======= SKILL MODULE ======= */
+.skills__header{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 4rem;
+  font-family: "Playfair Display", serif;
+}
+
+.skills_open .skills__arrow{
+  transform: rotate(-180deg);
+}
+.skills__arrow{
+  font-size: 2rem;
+  color: white;
+}
+.skills__arrow{
+  margin-left: auto;
+  transition: .4s;
+}
+.skills_open .skills__list{
+  height: max-content;
+  margin-bottom: 2.5rem;
+}
+.skills__close .skills__list{
+  height: 0;
+  overflow: hidden;
+}
+
+.skills__list{
+  margin-top: 1.5rem;
+  padding-left: 2.7rem;
+  /* transition: 0.3s ease-out; */
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* .enter_profile_container{
+  position: relative;
+  top: 4rem;
+  z-index: 4;
+  height: 65vh;
+  background: red;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.enter_profiel_kid{
+  width: 55vw;
+  height: 50vh;
+  background: green;
+  display: grid;
+  grid-template-columns: .3fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+} */
+

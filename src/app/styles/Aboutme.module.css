@@ -1,0 +1,128 @@
+.aboutme_section {
+  position: relative;
+  z-index: 4;
+  height: 70vh;
+  /* background: red; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.aboutme_headingn {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 3rem;
+}
+.aboutme_grid {
+  width: 55vw;
+  height: 50vh;
+  /* background: green; */
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* ======== SOCIALS ======== */
+.aboutme_socials {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.aboutme_social_icon {
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+  padding: 0.4rem;
+}
+.aboutme_social_icon:hover {
+  color: gray;
+}
+
+
+/* ======== INFORMATION ======== */
+.aboutme_information {
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 1fr 0.4fr;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+}
+.aboutme_info_heading {
+  font-size: 2.8rem;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 3px;
+  justify-self: flex-start;
+  align-self: center;
+}
+.info_para {
+  font-size: 1.5rem;
+  width: 27rem;
+}
+
+/* ======== EXPERIENCE ======== */
+.aboutme_exp {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.aboutme__exp_title {
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+.aboutme__info_name {
+  font-size: 1.1rem;
+}
+
+/* ======== CV BUTTOM ======== */
+.download_cv_botton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: 10px;
+  background-size: 300% 10%;
+  transition: all 0.4s ease-in-out;
+}
+.download_cv_botton a {
+  font-size: 0.7rem;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+.download_cv_botton:hover {
+  color: black;
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+  box-shadow: -3px 0px 5px white, 3px 3px 20px white;
+}
+
+.download_cv_botton:focus {
+  outline: none;
+}
+.download_cv_botton {
+  background-image: linear-gradient(
+    to right,
+    rgb(144, 138, 138),
+    white,
+    #faf6f7,
+    white
+  );
+  box-shadow: -3px 0px 5px rgb(255, 255, 255),
+    3px 3px 7px rgba(21, 20, 20, 0.765);
+}
+
+/* ======== BLOB ======== */
+.aboutme_blob {
+  justify-self: flex-end;
+}
+.home__blob_img {
+  width: 260px;
+}
+
+.home__blob {
+  width: 25rem;
+  fill: rgb(148, 146, 146);
+}
