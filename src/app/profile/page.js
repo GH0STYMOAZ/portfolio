@@ -12,11 +12,12 @@ import Services from "../components/children/profile/services";
 const Profile = () => {
   return (
     <>
+    <div className={styles.profile_overflow}>
       <div className={styles.profile_container}>
         <CustomCursor />
         <Navigation />
         <BackgroundFade />
-        <div className="profile">
+        <div className={styles.profile}>
           <h1 className={styles.profile_heading}>PROFILE</h1>
           
           {/* ===== ENTER PROFILE ===== */}
@@ -41,6 +42,7 @@ const Profile = () => {
 
 
         </div>
+      </div>
       </div>
     </>
   );

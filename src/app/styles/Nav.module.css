@@ -107,8 +107,17 @@
 .nav_link:before {
   transition: all 1s ease 0s;
 }
+.logo_copyright{
+  height: 100vh;
+  position: fixed;
+}
 
 /* ======== LOGO ======== */
+
+.logo_copyright{
+  position: fixed;
+  z-index: 10;
+}
 .nav_logo {
   position: fixed;
   z-index: 10;
@@ -118,6 +127,20 @@
   transform: translateX(-150px);
   animation: slide-in 1s forwards;
   cursor: pointer;
+}
+
+/* ======== COPY RIGHT ======== */
+.home_copyright{
+  position: fixed;
+  z-index: 10;
+  bottom: 100px;
+  left: 70px;
+  font-size: 17px;
+  color: white;
+  opacity: 0;
+  transform: translateX(-150px);
+  animation: slide-in 1s forwards;
+  font-family: "Playfair Display", serif;
 }
 
 @keyframes slide-in {

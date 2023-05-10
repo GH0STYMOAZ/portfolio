@@ -9,10 +9,16 @@ const Navigation = () => {
     <>
       <header>
         {/* ===== LOGO ===== */}
-        <div className={styles.nav_logo}>
-          <Link className="cursor-hover-link" href={"/"}>
-            <Image src="/imgs/logo.png" alt="logo" width={60} height={60} />
-          </Link>
+        <div className={styles.logo_copyright}>
+          <div className={styles.nav_logo}>
+            <Link className="cursor-hover-link" href={"/"}>
+              <Image src="/imgs/logo.png" alt="logo" width={60} height={60} />
+            </Link>
+          </div>
+          {/* ===== COPYRIGHT ===== */}
+          <div className={styles.home_copyright}>
+            <p>&copy; HISHAM HUSSAIN</p>
+          </div>
         </div>
 
         {/* ===== NAVIGATION ===== */}

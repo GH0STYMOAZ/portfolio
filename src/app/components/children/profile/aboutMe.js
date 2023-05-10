@@ -12,6 +12,7 @@ import {
 
 const AboutMe = () => {
   return (
+    // <div className={`aboutmeContainer ${isProfileVisible ? "show" : ""}`}>
     <div className={styles.aboutme_section}>
       <h1 className={styles.aboutme_headingn}>About Me</h1>
       <section className={styles.aboutme_grid}>
@@ -118,6 +119,7 @@ const AboutMe = () => {
         <div className="ending_line_two"></div>
       </section>
     </div>
+    // </div>
   );
 };
 

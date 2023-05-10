@@ -22,9 +22,9 @@ const Home = () => {
             <Navigation />
             <CustomCursor/>
             {/* ===== COPYRIGHT ===== */}
-            <div className={styles.home_copyright}>
+            {/* <div className={styles.home_copyright}>
               <p>&copy; HISHAM HUSSAIN</p>
-            </div>
+            </div> */}
           </div>
 
           {/* ===== BACKGROUND & HOME INFO===== */}

@@ -152,7 +152,7 @@ const Services = () => {
                 </div>
             </div>
         </div>
-        <div className="ending_line_three"></div>
+        {/* <div className="ending_line_three"></div> */}
     </div>
 </section>
 
