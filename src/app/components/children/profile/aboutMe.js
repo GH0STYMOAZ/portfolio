@@ -45,12 +45,10 @@ const AboutMe = () => {
 
         {/* =========  INFORMATION SECTION ========= */}
         <div className={styles.aboutme_information}>
-          <h2 className={styles.aboutme_info_heading}>Hi,&#73;&apos;am Moaz</h2>
+          <h2 className={styles.aboutme_info_heading}>Hi,&#73;&apos;am Hisham</h2>
 
           <div className={styles.info_para}>
-            Web developer, with extensive knowledge and years of experience,
-            working in web technologies and Ui / Ux design, delivering quality
-            work.
+            Experienced graphic designer skilled in creating visually compelling designs for logos, advertisements, and other marketing materials.
           </div>
 
           <div className={styles.aboutme_exp}>

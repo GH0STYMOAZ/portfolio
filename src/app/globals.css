@@ -11,7 +11,8 @@
 /* font-family: 'Oswald', sans-serif; */
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif; */
-/* font-family: "Playfair Display", serif; */
+/* font-family: "Playfair Display", serif; 
+    font-family: "Poppins", sans-serif;*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -20,6 +21,7 @@ font-family: 'Raleway', sans-serif; */
 body {
   background: #000;
   position: relative;
+  color: white;
 }
 
 /* ======= FADE ======= */
@@ -301,3 +303,449 @@ body {
   grid-template-columns: .3fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 } */
+
+/*==================== CONTACTME MODULE ====================*/
+.contactme_section {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+}
+.cm_container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+/*========== DATA ==========*/
+.cm_data {
+  position: absolute;
+  top: 0;
+  left: -11rem;
+  width: 60vw;
+  height: 100vh;
+  background: #b5b2b2ae;
+  transform: skew(-20deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+.cm_data_content {
+  transform: skew(20deg);
+}
+
+.cm_blob {
+  position: relative;
+  bottom: 1rem;
+}
+.cm__blob_img {
+  width: 260px;
+}
+.cm_svg {
+  width: 25rem;
+  fill: rgb(148, 146, 146);
+}
+.cm_data_data {
+  color: black;
+  font-size: 1.4rem;
+  width: 29rem;
+}
+
+/*========== FORM ==========*/
+.cmForm_form {
+  position: absolute;
+  top: 0;
+  right: -11rem;
+  width: 60vw;
+  height: 100vh;
+  background: #141414;
+  transform: skew(-20deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9;
+}
+.form {
+  position: relative;
+  display: block;
+  position: absolute;
+  margin: 0 auto;
+  width: 25rem;
+  min-height: 400px;
+  top: 33%;
+  left: 27%;
+  transform: skew(20deg);
+  z-index: 7;
+}
+.form h1 {
+  display: block;
+  margin: 0 0 45px 0;
+  color: #b1b1b1;
+  font-weight: 200;
+  font-size: 1.4rem;
+  font-family: "Playfair Display", serif;
+}
+
+.group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.group textarea {
+  width: 100%;
+  height: 10rem;
+  font-size: 1rem;
+  border: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+.group textarea:focus {
+  border: gray;
+}
+.group textarea::placeholder {
+  color: black;
+}
+
+.form input {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  height: 45px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #b1b1b1;
+  color: #b1b1b1;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0.5;
+  transition: 0.2s ease;
+}
+
+.form input:focus {
+  outline: none;
+  opacity: 1;
+}
+
+.form label {
+  font-family: "Poppins", sans-serif;
+  color: #b1b1b1;
+  font-size: 1.2rem;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 0;
+  opacity: 0.5;
+  transition: 0.2s ease all;
+}
+
+.form input:focus ~ label,
+input:valid ~ label {
+  top: -10px;
+  font-size: 12px;
+  color: #b1b1b1;
+  opacity: 1;
+}
+
+.form .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.form input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: #b1b1b1;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+.form_submit {
+  font-family: "Poppins", sans-serif;
+  float: right;
+  width: 130px;
+  height: 40px;
+  color: #141414;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*========== MEASSAGE BUTTON ==========*/
+.form_submit {
+  border: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.form_submit:after {
+  position: absolute;
+  content: " ";
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1fd1f9;
+  background-image: linear-gradient(315deg, white 0%, gray 74%);
+  transition: all 0.3s ease;
+}
+.form_submit:hover {
+  background: transparent;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+  color: #fff;
+}
+.form_submit:hover:after {
+  -webkit-transform: scale(2) rotate(180deg);
+  transform: scale(2) rotate(180deg);
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+}
+
+/*========== GHOST MODEL ==========*/
+:root {
+  --grid: 4px;
+  --tails-count: 9;
+  --ghost-width: calc(var(--grid) * 5 * var(--tails-count));
+  --tails-width: calc(var(--ghost-width) / var(--tails-count));
+  --ghost-color: white;
+  --background-color: gray;
+}
+
+.ghost {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  width: var(--ghost-width);
+  height: var(--ghost-width);
+  background-color: var(--ghost-color);
+  animation: bounce ease-in-out 1s infinite;
+  border-radius: 50% 50% 0 0;
+  z-index: 20;
+}
+
+.ghost:after {
+  animation: tail-bounce ease-in-out 1s infinite;
+  content: "";
+  width: var(--tails-width);
+  height: var(--tails-width);
+  background-color: var(--ghost-color);
+  border-radius: 50%;
+  position: absolute;
+  bottom: calc(var(--tails-width) / -2);
+  left: 0;
+  box-shadow: calc(var(--tails-width) * 1) 0px var(--background-color),
+    calc(var(--tails-width) * 2) 0px var(--ghost-color),
+    calc(var(--tails-width) * 3) 0px var(--background-color),
+    calc(var(--tails-width) * 4) 0px var(--ghost-color),
+    calc(var(--tails-width) * 5) 0px var(--background-color),
+    calc(var(--tails-width) * 6) 0px var(--ghost-color),
+    calc(var(--tails-width) * 7) 0px var(--background-color),
+    calc(var(--tails-width) * 8) 0px var(--ghost-color);
+}
+
+.ghost:before {
+  content: "";
+  position: absolute;
+  bottom: calc(var(--grid) * -12);
+  background-color: white;
+  box-shadow: 0 0 calc(var(--grid) * 2) calc(var(--grid) * 2) #1a1a1a;
+  opacity: 0.2;
+  height: calc(var(--grid) * 2);
+  width: 100%;
+  border-radius: 50%;
+  animation: shadow ease-in-out 1s infinite;
+}
+
+.ghosteyes {
+  position: absolute;
+  height: calc(var(--grid) * 10);
+  width: calc(var(--grid) * 10);
+  top: calc(var(--grid) * 16);
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.ghosteye {
+  position: absolute;
+  height: calc(var(--grid) * 10);
+  width: calc(var(--grid) * 10);
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+  mask-image: radial-gradient(white, black);
+}
+
+.eye--left {
+  top: 0;
+  left: calc(var(--grid) * -10);
+}
+
+.eye--right {
+  top: 0;
+  left: calc(var(--grid) * 10);
+}
+
+.pupil {
+  width: calc(var(--grid) * 3);
+  height: calc(var(--grid) * 3);
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  border-radius: 50%;
+}
+
+.pupil:after {
+  content: "";
+  width: calc(var(--grid));
+  height: calc(var(--grid));
+  border-radius: 50%;
+  position: absolute;
+  top: calc(var(--grid) / 2);
+  right: calc(var(--grid) / 2);
+  background-color: white;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-8px);
+  }
+
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+@keyframes tail-bounce {
+  0%,
+  100% {
+    transform: translateY(2px);
+  }
+
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes shadow {
+  0%,
+  100% {
+    transform: translateY(8px) scale(1.05);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/*========== EYES MODEL ==========*/
+.four_eyes {
+  position: relative;
+  z-index: 27;
+}
+.eye {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 1);
+}
+.pill {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+}
+.eye_one .eye_left {
+  top: 110px;
+  left: 369px;
+}
+.eye_one .eye_right {
+  top: 110px;
+  left: 396px;
+}
+
+.eye_two .eye_left {
+  top: 64px;
+  left: 182px;
+}
+.eye_two .eye_right {
+  top: 64px;
+  left: 212px;
+}
+
+.eye_three .eye_left {
+  top: 127px;
+  left: 616px;
+}
+.eye_three .eye_right {
+  top: 129px;
+  left: 644px;
+}
+.eye_four .eye_left {
+  top: 226px;
+  left: 884px;
+}
+.eye_four .eye_right {
+  top: 226px;
+  left: 910px;
+}
+
+.eye_one {
+  position: relative;
+  bottom: 2rem;
+  right: 10rem;
+}
+
+.eye_two {
+  position: relative;
+  top: 27rem;
+  left: 27rem;
+}
+
+.eye_three {
+  position: relative;
+  top: 12.5rem;
+  left: 56rem;
+}
+
+.eye_four {
+  position: relative;
+  top: 31.8rem;
+  left: 33rem;
+}
